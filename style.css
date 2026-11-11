@@ -29,3 +29,15 @@ header p{
     margin-top: 10px;
     font-size: 1.1rem;
 }
+
+main{
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+#vitrine-lanche{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
