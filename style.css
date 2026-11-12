@@ -125,31 +125,99 @@ main {
     font-size: 19px;
 }
 
-/* SELEÇÃO DOS HAMBÚRGUERES */
 
-.card-lanche input {
-    margin-left: 12px;
-    accent-color: #D00000;
-}
+/* BOTÃO ADICIONAR AO CARRINHO */
 
-.card-lanche label {
-    color: white;
+.btn-adicionar {
     background-color: #D00000;
+    color: white;
 
-    padding: 8px 10px;
+    padding: 10px 12px;
 
+    border: none;
     border-radius: 5px;
-    font-size: 12px;
+
+    font-size: 13px;
+
+    margin: 10px 12px;
 
     cursor: pointer;
 }
 
-/* EFEITO AO PASSAR O MOUSE */
+/* EFEITO DO BOTÃO */
 
-.card-lanche label:hover {
+.btn-adicionar:hover {
     background-color: #DC2F02;
 }
 
-.btn-carrinho:hover {
-    background-color: #FFBA08;
+/* ÁREA DO CARRINHO */
+
+#carrinho {
+    background-color: white;
+
+    padding: 25px;
+    margin-top: 35px;
+
+    border-radius: 10px;
 }
+
+/* TÍTULO DO CARRINHO */
+
+#carrinho h2 {
+    color: #6A040F;
+    text-align: center;
+}
+
+/* LISTA DE PRODUTOS */
+
+#lista-carrinho {
+    padding: 0;
+}
+
+#lista-carrinho li {
+    list-style: none;
+
+    padding: 12px;
+    margin: 10px 0;
+
+    background-color: #F4F4F4;
+
+    border-radius: 5px;
+    color: #333333;
+}
+
+/* VALOR TOTAL */
+
+#carrinho h3 {
+    color: #DC2F02;
+    font-size: 22px;
+}
+
+/* BOTÃO REMOVER */
+
+.btn-remover {
+    background-color: #D00000;
+    color: white;
+
+    padding: 6px 10px;
+
+    border: none;
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+/* CONTINUAR COMPRANDO */
+
+#fechar-carrinho {
+    background-color: #03071E;
+    color: white;
+
+    padding: 10px 15px;
+
+    border: none;
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
