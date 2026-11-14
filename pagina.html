@@ -16,8 +16,8 @@
                 <h1>ArtBurguer</h1>
                 <p>A verdadeira arte em forma de hambúrguer.</p>
             </div>
-            <button class="btn-carrinho" id="abrir-carrinho">
-                🛒 Meu Pedido <span class="badge">0</span>
+            <button class="btn-carrinho" id="abrir-carrinho" onclick="abrirCarrinho()">
+                Meu Pedido <span class="badge">0</span>
             </button>
         </div>
     </header>
@@ -32,7 +32,7 @@
                 <h3>Art Classico</h3>
                 <p>Pão brioche, bovino 160g, queijo prato e maionese da casa.</p>
                 <p><strong> R$ 28,00 </strong></p>
-                <button class="btn-adicionar" type="button" data-nome="Art Classico" data-preco="28.00">
+                <button class="btn-adicionar" type="button" onclick="adicionarAoPedido('Art Classico', 28.00)">
                     Adicionar ao carrinho
                 </button><br><br>
             </div>
@@ -42,7 +42,7 @@
                 <h3>Art Bacon</h3>
                 <p>Pão brioche, bovino 160g, queijo prato, bacon e maionese da casa.</p>
                 <p><strong> R$ 32,00 </strong></p>
-                <button class="btn-adicionar" type="button" data-nome="Art Bacon" data-preco="32.00">
+                <button class="btn-adicionar" type="button" onclick="adicionarAoPedido('Art Bacon', 32.00)">
                     Adicionar ao carrinho
                 </button><br><br>
             </div>
@@ -52,7 +52,7 @@
                 <h3>Art Egg</h3>
                 <p>Pão brioche, bovino 160g, queijo prato, ovo frito e maionese da casa.</p>
                 <p><strong> R$ 30,00 </strong></p>
-                <button class="btn-adicionar" type="button" data-nome="Art Egg" data-preco="30.00">
+                <button class="btn-adicionar" type="button" onclick="adicionarAoPedido('Art Egg', 30.00)">
                     Adicionar ao carrinho
                 </button><br><br>
             </div>
@@ -62,7 +62,7 @@
                 <h3>Art Duplo</h3>
                 <p>Pão brioche, 2 proteínas de carne bovina de 160g, queijo prato, bacon, ovo frito e maionese da casa.</p>
                 <p><strong> R$ 38,00 </strong></p>
-                <button class="btn-adicionar" type="button" data-nome="Art Duplo" data-preco="38.00">
+                <button class="btn-adicionar" type="button" onclick="adicionarAoPedido('Art Duplo', 38.00)">
                     Adicionar ao carrinho
                 </button><br><br>
             </div>
@@ -72,7 +72,7 @@
                 <h3>Art Chicken</h3>
                 <p>Pão americano, frango grelhado suculento, queijo suíço, alface, tomate e cebola roxa.</p>
                 <p><strong>R$ 32,00</strong></p>
-                 <button class="btn-adicionar" type="button" data-nome="Art Chicken" data-preco="32.00">
+                 <button class="btn-adicionar" type="button" onclick="adicionarAoPedido('Art Chicken', 32.00)">
                     Adicionar ao carrinho
                 </button><br><br>
             </div>
@@ -82,7 +82,7 @@
                 <h3>Art Vegetariano</h3>
                 <p>Pão brioche, hambúrguer de grão de bico, queijo prato, alface, tomate e maionese da casa.</p>
                 <p><strong> R$ 26,00 </strong></p>
-                <button class="btn-adicionar" type="button" data-nome="Art Vegetariano" data-preco="26.00">
+                <button class="btn-adicionar" type="button" onclick="adicionarAoPedido('Art Vegetariano', 26.00)">
                     Adicionar ao carrinho
                 </button><br><br>
             </div>
@@ -92,22 +92,15 @@
 
         </section>
                 <section id="carrinho" hidden>
+                    <h2>Meu Pedido</h2>
+                    <ul id="lista-carrinho">
 
-            <h2>Meu Pedido</h2>
-
-            <ul id="lista-carrinho">
-            </ul>
-
-            <h3>
-                Total: R$
-                <span id="total-carrinho">0,00</span>
-            </h3>
-
-            <button type="button" id="fechar-carrinho">
-                Continuar comprando
-            </button>
-
-        </section>
+                    </ul>
+                    <h3> Total: R$ <span id="total-carrinho">0,00</span> </h3>
+                    <button type="button" id="fechar-carrinho" onclick="fecharCarrinho()">
+                        Continuar comprando
+                    </button>
+                </section>
     </main>
     
 </body>
