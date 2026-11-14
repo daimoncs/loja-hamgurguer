@@ -22,8 +22,8 @@ function abrirCarrinho() {
     let vitrine = document.getElementById("vitrine-lanches");
     let carrinho = document.getElementById("carrinho");
 
-    vitrine.hidden = true;   // Esconde a vitrine
-    carrinho.hidden = false; // Mostra o carrinho
+    vitrine.hidden = true;   
+    carrinho.hidden = false; 
 }
 
 
